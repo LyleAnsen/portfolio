@@ -1,0 +1,258 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#edceed;
+
+}
+
+.section
+{
+	background:url(background.jpg);
+	background-size:cover;
+	width:100%;
+	height:650px;
+	position:relative;
+	overflow:hidden;
+}
+ 
+
+.snow1
+{
+	background:url(snow.png);
+	background-repeat:repeat;
+	width:100%;
+	height:650px;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateOne 10s infinite linear;
+
+} 
+
+.snow2
+{
+	background:url(snow.png);
+	background-repeat:repeat;
+	width:100%;
+	height:650px;
+	position:absolute;
+	top:0;
+	left:0;
+	animation:animateSecond 10s infinite linear;
+
+} 
+
+
+
+@keyframes animateOne
+{
+	0%
+	{
+		background-position: 0px 0px
+	}
+
+	100%
+	{
+		background-position: 100px 650px
+	} 
+}
+
+
+@keyframes animateSecond
+{
+	0%
+	{
+		background-position: 0px -100px
+	}
+
+	100%
+	{
+		background-position: 0px 650px
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div{
+	margin-left: auto;
+}
+h1{
+	margin-left: 350px;
+	font-size: 100px;
+	
+}
+td{
+	text-align: center;
+}
+table{
+	height: 400px;
+	width: 950px;
+	margin-left: 200px;
+	font-size: 20px;
+}
+.section{
+	width:100%;
+	height:100%;
+}
+.set{
+	position: absolute;
+	width:100%;
+	height:50%;
+	top:0;
+	margin-left:-300px;
+}
+.set div{
+	position: absolute;
+	display: block;
+}
+.set div:nth-child(1){
+	left:30%;
+	animation: animate 15s linear infinite;
+	animation-delay:-7s;
+}
+.set div:nth-child(2){
+	left:60%;
+	animation:animate 20s linear infinite;
+	animation-delay:-5s;
+}
+.set div:nth-child(3){
+	left:70%;
+	animation:animate 25s linear infinite;
+}
+.set div:nth-child(4){
+	left:0%;
+	animation:animate 15s linear infinite;
+	animation-delay:-5s;
+}
+.set div:nth-child(5){
+	left:85%;
+	animation:animate 18s linear infinite;
+	animation-delay:-10s;
+}
+.set div:nth-child(6){
+	left:0%;
+	animation:animate 12s linear infinite;
+	animation-delay:-7s;
+}
+.set div:nth-child(7)
+{
+  left: 15%;
+  animation: animate 14s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(8)
+{
+  left: 60%;
+  animation: animate 15s linear infinite;
+  animation-delay: -7s;
+}
+.set div:nth-child(9)
+{
+  left: 80%;
+  animation: animate 15s linear infinite;
+  animation-delay: -9s;
+}
+.set div:nth-child(10)
+{
+  left: 100%;
+  animation: animate 9s linear infinite;
+  animation-delay: -10s;
+}
+.set div:nth-child(11)
+{
+  left: 40%;
+  animation: animate 13s linear infinite;
+  animation-delay: -6s;
+}
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+    top: -10%;
+    transform: translateX(20px) rotate(0deg);
+  } 
+  10%
+  {
+    opacity: 1;
+
+  }
+  20%
+  {
+  
+    transform: translateX(-20px) rotate(45deg);
+  }
+  40%
+  {
+  
+    transform: translateX(-20px) rotate(90deg);
+  }
+  60%
+  {
+  
+    transform: translateX(20px) rotate(135deg);
+  }
+  80%
+  {
+  
+    transform: translateX(-20px) rotate(180deg);
+  }
+  100%
+  {
+    top: 110%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+  10%
+  {
+    opacity: 2;
+    top: -10%;
+  }
+}
+img 
+{
+  width: 200px;
+  height: 200px;
+}
+.next{
+	border: none;
+	padding: 10px 15px;
+	margin-left: 1100px;
+	margin-top: 660px;
+	font-size: 16px;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	font-weight:600;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.previous {
+	border: none;
+	padding: 10px 15px;
+	margin-left: 300px;
+	margin-top: 660px;
+	font-size: 16px;
+	letter-spacing:1px;
+	text-transform: uppercase;
+	font-weight:600;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.btn{
+	width:100%;
+	height:100%;
+}

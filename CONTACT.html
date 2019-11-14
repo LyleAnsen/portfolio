@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CONTACT US</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <meta charset ="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+  </script>
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+  <nav class="desk">
+    <ul>
+      <li class="active"><a href="navigationbar.html">HOME</a></li>
+      <li><a href="SHOWS.html">SHOWS</a></li>
+      <li><a href="SCHEDULES.html">SCHEDULES</a></li>
+	  <li><a href="DJ.html">DJ'S</a></li>
+      <li><a href="EVENTS.html">EVENTS</a></li>
+      <li><a href="STAFF.html">STAFF</a></li>
+	  <li><a href="CONTACT.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  
+  
+		
+		<div class="contact-form">
+		
+				<form id="contact-form" method="post" action="https://www.facebook.com/">
+					<div class="txtb">
+					<center><h1>Contact Us</h1></center>
+					<label style="color:white;">FULL NAME :</label>
+					<input style="color:white;" type="text" name="" class="form-control" value="" placeholder="Enter Your Name">
+					
+				
+					<label style="color:white;">EMAIL :</label>
+					<input style="color:white;" type="email" name="" class="form-control" value="" placeholder="Enter Your Email">
+				
+				
+				
+					<label style="color:white;">PHONE NUMBER :</label>
+					<input style="color:white;" type="text" name="" class="form-control" value="" placeholder="Enter Your Phone Number">
+				
+				
+				
+					<label style="color:white;">MESSAGE :</label>
+					<textarea style="color:white;" name="message" class="form-control" placeholder="Request a song" rows="4" required></textarea>
+					
+					<label style="color:white;">Where did you know us? :</label>
+					<textarea style="color:white;" name="message" class="form-control" placeholder="Example: Radio, TV, Commercial, Adds" rows="4" required>
+					</textarea>
+					
+					<input type="submit" class="btn" value="Send Message">
+					
+					
+					
+					
+				</form>
+				</div>
+				
+				
+				
+				
+				
+			<nav class="mob">
+    <div class="hamburger-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+        <li class="active"><a href="navigationbar.html">home</a></li>
+        <li><a href="SHOWS.html">SHOWS</a></li>
+        <li><a href="SCHEDULES.html">SCHEDULES</a></li>
+        <li><a href="DJ.html">DJ'S</a></li>
+        <li><a href="EVENTS.html">EVENTS</a></li>
+		<li><a href="STAFF.html">STAFF</a></li>
+        <li><a href="CONTACT.html">CONTACT</a></li>
+    </ul>
+ </nav>
+		</body>
+	</html>
