@@ -1,0 +1,62 @@
+<HTML>
+<TITLE> Working with Forms </TITLE>
+<BODY BGCOLOR="lightyellow">
+
+<FORM>
+  <B><font color="blue"> Class Information</font></B>
+  <pre>
+<label>  Full Name  :  </label><INPUT type="TEXT"  	name="fullname" 	value=" ">
+ <label> E-Mail     : </label> <INPUT type="TEXT"  	name="email"     	value=" ">
+ <label> Phone No.  : </label> <INPUT type="TEXT"  name="phone"     value=" ">                                                
+  </pre>
+</FORM> 
+</BODY>
+</HTML>
+</pre>
+ <B><font color="blue">Enrollment</font></B>
+ <BR>In what session are you enrolled?<BR>
+ <INPUT 	  type="radio"   name="session"   value="day">Day session  
+ <INPUT 	  type="radio"   name="session"   value="evening">Evening session
+ <INPUT   type="radio"    name="session"   value="weekend">Weekend session
+</FORM> 
+</BODY>
+</HTML>
+<P>What year are you? 
+ <SELECT NAME="year" SIZE=1>
+    <OPTION SELECTED> Freshman
+    <OPTION> Sophomore
+    <OPTION> Junior
+    <OPTION> Senior
+    <OPTION> Post Graduate
+    <OPTION> Visiting student
+    <OPTION> Other
+ </SELECT>
+<B><font color=blue> Computer Experience </font></B>
+  <p>
+  Select all that apply?
+  <SELECT NAME="experience" SIZE=5  MULTIPLE>
+      <OPTION SELECTED> Windows NT
+      <OPTION> UNIX
+      <OPTION> HTML
+      <OPTION> FTP
+      <OPTION> Archie
+      <OPTION> Gohper
+      <OPTION> Newsgroups
+  </SELECT>
+<P><B><font color="blue">Favorites</font></B>
+ <BR>Select your favorite topic(s)?
+ 
+<INPUT TYPE="checkbox" name="favorites" value="none"> None<BR>
+<INPUT TYPE="checkbox" name="favorites" value="windows"> Windows
+<INPUT TYPE="checkbox" name="favorites" value="unix">UNIX
+<INPUT TYPE="checkbox" name="favorites" value="web">The Web
+<INPUT TYPE="checkbox" name="favorites" value="news">Newsgroups
+<P><B><font color="blue">Others</font></B>
+ <BR>Please type in the text box below if you want to comment?
+
+ <TEXTAREA  ROWS=2  COLS=40  NAME="comments"> 
+ </TEXTAREA>
+<HR> 
+<INPUT TYPE="submit" NAME="submitbutton" value="Process Data">
+<INPUT TYPE="reset"  NAME="resetbutton"  value="Clear data"> 
+<HR>
